@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-29T09:22:33.000Z</updated>
+  <updated>2018-05-29T09:46:14.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,24 +17,25 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>four</title>
+    <title>hexo文章中发表图片方法</title>
     <link href="http://yoursite.com/2018/05/29/four/"/>
     <id>http://yoursite.com/2018/05/29/four/</id>
     <published>2018-05-29T09:06:16.000Z</published>
-    <updated>2018-05-29T09:22:33.000Z</updated>
+    <updated>2018-05-29T09:46:14.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/2018/05/29/four/service.jpg" alt="logo"></p>]]></content>
+    <content type="html"><![CDATA[<h4 id="开启本地配置"><a href="#开启本地配置" class="headerlink" title="开启本地配置"></a>开启本地配置</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">在我们的本地的hexo的_config.yml文件中，找到post_asset_folder</span><br><span class="line">这个参数。</span><br><span class="line">修改为post_asset_folder = <span class="literal">true</span>.</span><br></pre></td></tr></table></figure><h4 id="怎么生成图片"><a href="#怎么生成图片" class="headerlink" title="怎么生成图片"></a>怎么生成图片</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">我们开启hexo的这个配置后，在我们下次进行new一个博客的时候</span><br><span class="line">会直接产生一个和博客文件名一样的文件夹。</span><br><span class="line">在这个文件夹中，我们可以直接把我们需要用到的图片放进去。</span><br><span class="line">图片放入之后，我们在我们的md文件里面使用markdown的语法引入图片。</span><br><span class="line">例：![logo](博客相同的文件夹名字/logo.jpg)</span><br><span class="line">如果没有出现图片请用下面的路径：</span><br><span class="line">![logo](/2018/05/29/博客相同的文件夹名字/logo.jpg)</span><br><span class="line">我们在前面加上当天的日期。</span><br><span class="line">之后进行上传博客到你自己的git上面。</span><br></pre></td></tr></table></figure><h4 id="展示"><a href="#展示" class="headerlink" title="展示"></a>展示</h4><p><img src="/2018/05/29/four/star.png" alt="logo"></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;/2018/05/29/four/service.jpg&quot; alt=&quot;logo&quot;&gt;&lt;/p&gt;
-
+        &lt;h4 id=&quot;开启本地配置&quot;&gt;&lt;a href=&quot;#开启本地配置&quot; class=&quot;headerlink&quot; title=&quot;开启本地配置&quot;&gt;&lt;/a&gt;开启本地配置&lt;/h4&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutt
       
     
     </summary>
     
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   

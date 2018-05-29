@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[four]]></title>
+    <title><![CDATA[hexo文章中发表图片方法]]></title>
     <url>%2F2018%2F05%2F29%2Ffour%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <content type="text"><![CDATA[开启本地配置123在我们的本地的hexo的_config.yml文件中，找到post_asset_folder这个参数。修改为post_asset_folder = true. 怎么生成图片123456789我们开启hexo的这个配置后，在我们下次进行new一个博客的时候会直接产生一个和博客文件名一样的文件夹。在这个文件夹中，我们可以直接把我们需要用到的图片放进去。图片放入之后，我们在我们的md文件里面使用markdown的语法引入图片。例：![logo](博客相同的文件夹名字/logo.jpg)如果没有出现图片请用下面的路径：![logo](/2018/05/29/博客相同的文件夹名字/logo.jpg)我们在前面加上当天的日期。之后进行上传博客到你自己的git上面。 展示]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[vue的class对象绑定]]></title>
