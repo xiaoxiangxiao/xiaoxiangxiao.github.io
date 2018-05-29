@@ -73,8 +73,6 @@
 
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="X-0524" type="application/atom+xml" />
 
@@ -83,18 +81,18 @@
 
 
 
-<meta name="description" content="属性：v-bind:class v-bind:class123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051下面我们对html进行了class的绑定&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;&amp;lt;head&amp;gt;">
+<meta name="description" content="本节课程：v-bind:class v-bind:class123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051下面我们对html进行了class的绑定&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;&amp;lt;head&amp;gt;">
 <meta name="keywords" content="vue">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue的class对象绑定">
 <meta property="og:url" content="http://yoursite.com/2018/05/29/three/index.html">
 <meta property="og:site_name" content="X-0524">
-<meta property="og:description" content="属性：v-bind:class v-bind:class123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051下面我们对html进行了class的绑定&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;&amp;lt;head&amp;gt;">
+<meta property="og:description" content="本节课程：v-bind:class v-bind:class123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051下面我们对html进行了class的绑定&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;&amp;lt;head&amp;gt;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-29T08:51:35.000Z">
+<meta property="og:updated_time" content="2018-05-29T09:05:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue的class对象绑定">
-<meta name="twitter:description" content="属性：v-bind:class v-bind:class123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051下面我们对html进行了class的绑定&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;&amp;lt;head&amp;gt;">
+<meta name="twitter:description" content="本节课程：v-bind:class v-bind:class123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051下面我们对html进行了class的绑定&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;&amp;lt;head&amp;gt;">
 
 
 
@@ -351,7 +349,7 @@
       
 
       
-        <h4 id="属性："><a href="#属性：" class="headerlink" title="属性："></a>属性：</h4><pre><code>v-bind:class
+        <h4 id="本节课程："><a href="#本节课程：" class="headerlink" title="本节课程："></a>本节课程：</h4><pre><code>v-bind:class
 </code></pre><h4 id="v-bind-class"><a href="#v-bind-class" class="headerlink" title="v-bind:class"></a>v-bind:class</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">下面我们对html进行了class的绑定</span><br><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;vueDemo&lt;/title&gt;</span><br><span class="line">    &lt;script src=<span class="string">"https://cdn.jsdelivr.net/npm/vue"</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    .active</span><br><span class="line">    &#123;</span><br><span class="line">        color: red;</span><br><span class="line">    &#125;</span><br><span class="line">    .big</span><br><span class="line">    &#123;</span><br><span class="line">        font-weight: bolder;</span><br><span class="line">        font-size: 64px;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id=<span class="string">"myApp"</span>&gt;</span><br><span class="line">        &lt;div v-bind:class=<span class="string">"myClass"</span>&gt;文本&lt;/div&gt;</span><br><span class="line">        &lt;button @click=<span class="string">"btnClick"</span>&gt;点击改变&lt;/button&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line">&lt;script &gt;</span><br><span class="line">    var myApp = new Vue</span><br><span class="line">    (&#123;</span><br><span class="line">        el: <span class="string">"#myApp"</span>,</span><br><span class="line">        data:</span><br><span class="line">        &#123;</span><br><span class="line">            myClass:</span><br><span class="line">            &#123;</span><br><span class="line">                active:<span class="literal">true</span>,</span><br><span class="line">                big:<span class="literal">true</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        methods:</span><br><span class="line">        &#123;</span><br><span class="line">            btnClick: <span class="keyword">function</span>()</span><br><span class="line">            &#123;</span><br><span class="line">                this.myClass.active = !this.myClass.active;</span><br><span class="line">                this.myClass.big =  !this.myClass.big;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
       
     </div>
@@ -401,6 +399,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/29/four/" rel="prev" title="four">
+                four <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -477,7 +479,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -564,7 +566,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#属性："><span class="nav-number">1.</span> <span class="nav-text">属性：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#v-bind-class"><span class="nav-number">2.</span> <span class="nav-text">v-bind:class</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#本节课程："><span class="nav-number">1.</span> <span class="nav-text">本节课程：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#v-bind-class"><span class="nav-number">2.</span> <span class="nav-text">v-bind:class</span></a></li></ol></div>
             
 
           </div>

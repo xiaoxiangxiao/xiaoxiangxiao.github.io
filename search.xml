@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[four]]></title>
+    <url>%2F2018%2F05%2F29%2Ffour%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[vue的class对象绑定]]></title>
     <url>%2F2018%2F05%2F29%2Fthree%2F</url>
-    <content type="text"><![CDATA[属性：v-bind:class v-bind:class123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051下面我们对html进行了class的绑定&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt; &lt;meta charset="UTF-8"&gt; &lt;title&gt;vueDemo&lt;/title&gt; &lt;script src="https://cdn.jsdelivr.net/npm/vue"&gt;&lt;/script&gt;&lt;/head&gt;&lt;style&gt; .active &#123; color: red; &#125; .big &#123; font-weight: bolder; font-size: 64px; &#125;&lt;/style&gt;&lt;body&gt; &lt;div id="myApp"&gt; &lt;div v-bind:class="myClass"&gt;文本&lt;/div&gt; &lt;button @click="btnClick"&gt;点击改变&lt;/button&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;script &gt; var myApp = new Vue (&#123; el: "#myApp", data: &#123; myClass: &#123; active:true, big:true &#125; &#125;, methods: &#123; btnClick: function() &#123; this.myClass.active = !this.myClass.active; this.myClass.big = !this.myClass.big; &#125; &#125; &#125;)&lt;/script&gt;]]></content>
+    <content type="text"><![CDATA[本节课程：v-bind:class v-bind:class123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051下面我们对html进行了class的绑定&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt; &lt;meta charset="UTF-8"&gt; &lt;title&gt;vueDemo&lt;/title&gt; &lt;script src="https://cdn.jsdelivr.net/npm/vue"&gt;&lt;/script&gt;&lt;/head&gt;&lt;style&gt; .active &#123; color: red; &#125; .big &#123; font-weight: bolder; font-size: 64px; &#125;&lt;/style&gt;&lt;body&gt; &lt;div id="myApp"&gt; &lt;div v-bind:class="myClass"&gt;文本&lt;/div&gt; &lt;button @click="btnClick"&gt;点击改变&lt;/button&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&lt;script &gt; var myApp = new Vue (&#123; el: "#myApp", data: &#123; myClass: &#123; active:true, big:true &#125; &#125;, methods: &#123; btnClick: function() &#123; this.myClass.active = !this.myClass.active; this.myClass.big = !this.myClass.big; &#125; &#125; &#125;)&lt;/script&gt;]]></content>
       <tags>
         <tag>vue</tag>
       </tags>

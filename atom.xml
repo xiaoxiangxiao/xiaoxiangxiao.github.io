@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-29T08:51:35.000Z</updated>
+  <updated>2018-05-29T09:20:02.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,20 +17,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>vue的class对象绑定</title>
-    <link href="http://yoursite.com/2018/05/29/three/"/>
-    <id>http://yoursite.com/2018/05/29/three/</id>
-    <published>2018-05-29T08:46:14.000Z</published>
-    <updated>2018-05-29T08:51:35.000Z</updated>
+    <title>four</title>
+    <link href="http://yoursite.com/2018/05/29/four/"/>
+    <id>http://yoursite.com/2018/05/29/four/</id>
+    <published>2018-05-29T09:06:16.000Z</published>
+    <updated>2018-05-29T09:20:02.000Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="属性："><a href="#属性：" class="headerlink" title="属性："></a>属性：</h4><pre><code>v-bind:class</code></pre><h4 id="v-bind-class"><a href="#v-bind-class" class="headerlink" title="v-bind:class"></a>v-bind:class</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">下面我们对html进行了class的绑定</span><br><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;vueDemo&lt;/title&gt;</span><br><span class="line">    &lt;script src=<span class="string">"https://cdn.jsdelivr.net/npm/vue"</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    .active</span><br><span class="line">    &#123;</span><br><span class="line">        color: red;</span><br><span class="line">    &#125;</span><br><span class="line">    .big</span><br><span class="line">    &#123;</span><br><span class="line">        font-weight: bolder;</span><br><span class="line">        font-size: 64px;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id=<span class="string">"myApp"</span>&gt;</span><br><span class="line">        &lt;div v-bind:class=<span class="string">"myClass"</span>&gt;文本&lt;/div&gt;</span><br><span class="line">        &lt;button @click=<span class="string">"btnClick"</span>&gt;点击改变&lt;/button&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line">&lt;script &gt;</span><br><span class="line">    var myApp = new Vue</span><br><span class="line">    (&#123;</span><br><span class="line">        el: <span class="string">"#myApp"</span>,</span><br><span class="line">        data:</span><br><span class="line">        &#123;</span><br><span class="line">            myClass:</span><br><span class="line">            &#123;</span><br><span class="line">                active:<span class="literal">true</span>,</span><br><span class="line">                big:<span class="literal">true</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        methods:</span><br><span class="line">        &#123;</span><br><span class="line">            btnClick: <span class="keyword">function</span>()</span><br><span class="line">            &#123;</span><br><span class="line">                this.myClass.active = !this.myClass.active;</span><br><span class="line">                this.myClass.big =  !this.myClass.big;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p><img src="four/service.jpg" alt="logo"></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h4 id=&quot;属性：&quot;&gt;&lt;a href=&quot;#属性：&quot; class=&quot;headerlink&quot; title=&quot;属性：&quot;&gt;&lt;/a&gt;属性：&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;v-bind:class
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;v-bind-class&quot;&gt;&lt;a href=&quot;#
+        &lt;p&gt;&lt;img src=&quot;four/service.jpg&quot; alt=&quot;logo&quot;&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>vue的class对象绑定</title>
+    <link href="http://yoursite.com/2018/05/29/three/"/>
+    <id>http://yoursite.com/2018/05/29/three/</id>
+    <published>2018-05-29T08:46:14.000Z</published>
+    <updated>2018-05-29T09:05:57.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="本节课程："><a href="#本节课程：" class="headerlink" title="本节课程："></a>本节课程：</h4><pre><code>v-bind:class</code></pre><h4 id="v-bind-class"><a href="#v-bind-class" class="headerlink" title="v-bind:class"></a>v-bind:class</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">下面我们对html进行了class的绑定</span><br><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;vueDemo&lt;/title&gt;</span><br><span class="line">    &lt;script src=<span class="string">"https://cdn.jsdelivr.net/npm/vue"</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    .active</span><br><span class="line">    &#123;</span><br><span class="line">        color: red;</span><br><span class="line">    &#125;</span><br><span class="line">    .big</span><br><span class="line">    &#123;</span><br><span class="line">        font-weight: bolder;</span><br><span class="line">        font-size: 64px;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id=<span class="string">"myApp"</span>&gt;</span><br><span class="line">        &lt;div v-bind:class=<span class="string">"myClass"</span>&gt;文本&lt;/div&gt;</span><br><span class="line">        &lt;button @click=<span class="string">"btnClick"</span>&gt;点击改变&lt;/button&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line">&lt;script &gt;</span><br><span class="line">    var myApp = new Vue</span><br><span class="line">    (&#123;</span><br><span class="line">        el: <span class="string">"#myApp"</span>,</span><br><span class="line">        data:</span><br><span class="line">        &#123;</span><br><span class="line">            myClass:</span><br><span class="line">            &#123;</span><br><span class="line">                active:<span class="literal">true</span>,</span><br><span class="line">                big:<span class="literal">true</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        methods:</span><br><span class="line">        &#123;</span><br><span class="line">            btnClick: <span class="keyword">function</span>()</span><br><span class="line">            &#123;</span><br><span class="line">                this.myClass.active = !this.myClass.active;</span><br><span class="line">                this.myClass.big =  !this.myClass.big;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;本节课程：&quot;&gt;&lt;a href=&quot;#本节课程：&quot; class=&quot;headerlink&quot; title=&quot;本节课程：&quot;&gt;&lt;/a&gt;本节课程：&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;v-bind:class
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;v-bind-class&quot;&gt;&lt;a
       
     
     </summary>
