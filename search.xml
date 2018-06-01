@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Markdown语法介绍]]></title>
+    <url>%2F2018%2F06%2F01%2Ffive%2F</url>
+    <content type="text"><![CDATA[标题123456789101112131415161718192021222324252627282930313233标题都以#开头，标题会自动换行语法: # 这是标题1## 这是标题2### 这是标题3#### 这是标题4这是普通文字这是标题1这是标题2这是标题3这是标题4这是普通文字 换行每行文字后面加2个或更多空格文字行1（后面加2个空格）文字行2（后面加2个空格）文字行3（后面无空格，仅用换行）文字行4（后面无空格，仅用换行）文字行5（后面无空格，仅用换行） 代码高亮12345678910行内代码高亮可以用两个``将内容包裹起来。例如`function()&#123;return 0&#125;` 表现为function()&#123;return 0&#125;。可以保持高亮。如果是多行内容，则使用```将代码包起来。Example:```javascriptvar s = "JavaScript syntax highlighting";alert(s); 1234def function(): #indenting works just fine in the fenced code block s = "Python syntax highlighting" print s 123require 'redcarpet'markdown = Redcarpet.new("Hello World!")puts markdown.to_html 123No language indicated, so no syntax highlighting.s = &quot;There is no highlighting for this.&quot;But let&apos;s throw in a &lt;b&gt;tag&lt;/b&gt;. becomes: var s = &quot;JavaScript syntax highlighting&quot;; alert(s); def function(): #indenting works just fine in the fenced code block s = &quot;Python syntax highlighting&quot; print s require &apos;redcarpet&apos; markdown = Redcarpet.new(&quot;Hello World!&quot;) puts markdown.to_html No language indicated, so no syntax highlighting. s = &quot;There is no highlighting for this.&quot; But let&apos;s throw in a &lt;b&gt;tag&lt;/b&gt;. 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132```bash链接语法: [链接名称](链接地址)列表无序列表Markdown 语法：* 项目一 * 项目二 * 项目二的子项目一 * 项目二的子项目二效果如下：项目一项目二项目二的子项目一 项目二的子项目二有序列表Markdown 语法：1. 项目一 2. 项目二 3. 项目三 1. 项目三的子项目一 2. 项目三的子项目二效果如下：项目一 项目二 项目三项目三的子项目一项目三的子项目二任务列表（Task lists）Markdown 语法：- [ ] 任务一 未做任务- [x] 任务二 已做任务效果如下： 任务一 未做任务 任务二 已做任务表格Example:| header 1 | header 2 || -------- | -------- || cell 1 | cell 2 || cell 3 | cell 4 |效果：header 1header 2cell 1cell 2cell 3cell 4引用&gt; 这是引用&gt; 直接换行 &gt; 行后面跟两个空格 &gt; 行后面跟两个空格效果这是引用直接换行行后面跟两个空格行后面跟两个空格删除Examples:&#123;+ additions +&#125;[+ additions +]&#123;- deletions -&#125;[- deletions -]~~test~~ additions additions deletions deletions test]]></content>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hexo文章中发表图片方法]]></title>
     <url>%2F2018%2F05%2F29%2Ffour%2F</url>
     <content type="text"><![CDATA[开启本地配置123在我们的本地的hexo的_config.yml文件中，找到post_asset_folder这个参数。修改为post_asset_folder = true. 怎么生成图片123456789我们开启hexo的这个配置后，在我们下次进行new一个博客的时候会直接产生一个和博客文件名一样的文件夹。在这个文件夹中，我们可以直接把我们需要用到的图片放进去。图片放入之后，我们在我们的md文件里面使用markdown的语法引入图片。例：![logo](博客相同的文件夹名字/logo.jpg)如果没有出现图片请用下面的路径：![logo](/2018/05/29/博客相同的文件夹名字/logo.jpg)我们在前面加上当天的日期。之后进行上传博客到你自己的git上面。 展示]]></content>
