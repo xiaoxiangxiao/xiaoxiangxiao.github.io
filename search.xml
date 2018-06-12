@@ -4,6 +4,9 @@
     <title><![CDATA[值得看的书籍]]></title>
     <url>%2F2018%2F06%2F11%2Fsix%2F</url>
     <content type="text"><![CDATA[今天来给大家推荐一下值得看的书籍首先呢，在现在的这个社会里面高强度的工作和浮躁的社会现象，还有互联网娱乐风向的影响有些人已经将书籍抛弃了。大家都说”南抖音北快手”谁还看书呀，但是腹有诗书气自华这个可不是凭空就可以做到的。123456789首先说一下看书的用处，书中的故事是非常有含义的。书中的故事有可能在你看的时候没有太大的感触和理解。但是你会发现在你的生活之中，会有书籍中的故事和你所经历的一样，他可以为你解答你对一些问题的疑惑。书籍呢，有些人说书籍改变你的命运，我们不说这么虚无的，我们就实在的来说。看书是快速了解这个世界，了解不同有价值思想，从书中学到自己所不解的知识而让自己快速的成长。充实自身和了解自己。最后当你把读书变成爱好后你一定会感激现在的自己。 下面介绍一些书籍莫言的书籍12345《蛙》为中国当代作家莫言重要作品，出版于2009年，《蛙》 以新中国近60年波澜起伏的农村生育史为背景，讲述了从事妇产科工作50多年的乡村女医生姑姑的人生经历，也反映出中国计划生育的艰难历程。小说通过讲述从事妇产科工作50多年的乡村女医生姑姑的人生经历，反映新中国近60年波澜起伏的农村生育史，描述国家为了控制人口剧烈增长、实施计划生育国策所走过的艰巨而复杂的历史过程。 12《丰乳肥臀》是莫言最著名的代表作之一 。小说热情讴歌了生命最原初的创造者——母亲的伟大、朴素与无私，生命的沿袭的无与伦比的重要意义。并且在这一幅生命的流程图中，弥漫着历史与战争的硝烟，真实，不带任何偏见，再现了一段时期内的历史。 洪应明（明代）【重点推荐大作】123456这本书首先容纳了儒家、佛家、道家，这三大思想。其文字简炼明隽，兼采雅俗。似语录，而有语录所没有的趣味；似随笔，而有随笔所不易及的整饬；似训诫，而有训诫所缺乏的亲切醒豁；且有雨余山色，夜静钟声，点染其间，其所言清霏有味，风月无边。读过此书的人都深有体会。不同时期年龄的你再次阅读会有不同的理解和感受。 这次就先给大家介绍这三本，未完待续！！！]]></content>
+      <categories>
+        <category>book</category>
+      </categories>
       <tags>
         <tag>book</tag>
       </tags>
@@ -12,6 +15,9 @@
     <title><![CDATA[Markdown语法介绍]]></title>
     <url>%2F2018%2F06%2F01%2Ffive%2F</url>
     <content type="text"><![CDATA[标题123456789101112131415161718192021222324252627282930313233标题都以#开头，标题会自动换行语法: # 这是标题1## 这是标题2### 这是标题3#### 这是标题4这是普通文字这是标题1这是标题2这是标题3这是标题4这是普通文字 换行每行文字后面加2个或更多空格文字行1（后面加2个空格）文字行2（后面加2个空格）文字行3（后面无空格，仅用换行）文字行4（后面无空格，仅用换行）文字行5（后面无空格，仅用换行） 代码高亮12345678910行内代码高亮可以用两个``将内容包裹起来。例如`function()&#123;return 0&#125;` 表现为function()&#123;return 0&#125;。可以保持高亮。如果是多行内容，则使用```将代码包起来。Example:```javascriptvar s = "JavaScript syntax highlighting";alert(s); 1234def function(): #indenting works just fine in the fenced code block s = "Python syntax highlighting" print s 123require 'redcarpet'markdown = Redcarpet.new("Hello World!")puts markdown.to_html 123No language indicated, so no syntax highlighting.s = &quot;There is no highlighting for this.&quot;But let&apos;s throw in a &lt;b&gt;tag&lt;/b&gt;. becomes: var s = &quot;JavaScript syntax highlighting&quot;; alert(s); def function(): #indenting works just fine in the fenced code block s = &quot;Python syntax highlighting&quot; print s require &apos;redcarpet&apos; markdown = Redcarpet.new(&quot;Hello World!&quot;) puts markdown.to_html No language indicated, so no syntax highlighting. s = &quot;There is no highlighting for this.&quot; But let&apos;s throw in a &lt;b&gt;tag&lt;/b&gt;. 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132```bash链接语法: [链接名称](链接地址)列表无序列表Markdown 语法：* 项目一 * 项目二 * 项目二的子项目一 * 项目二的子项目二效果如下：项目一项目二项目二的子项目一 项目二的子项目二有序列表Markdown 语法：1. 项目一 2. 项目二 3. 项目三 1. 项目三的子项目一 2. 项目三的子项目二效果如下：项目一 项目二 项目三项目三的子项目一项目三的子项目二任务列表（Task lists）Markdown 语法：- [ ] 任务一 未做任务- [x] 任务二 已做任务效果如下： 任务一 未做任务 任务二 已做任务表格Example:| header 1 | header 2 || -------- | -------- || cell 1 | cell 2 || cell 3 | cell 4 |效果：header 1header 2cell 1cell 2cell 3cell 4引用&gt; 这是引用&gt; 直接换行 &gt; 行后面跟两个空格 &gt; 行后面跟两个空格效果这是引用直接换行行后面跟两个空格行后面跟两个空格删除Examples:&#123;+ additions +&#125;[+ additions +]&#123;- deletions -&#125;[- deletions -]~~test~~ additions additions deletions deletions test]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
       <tags>
         <tag>Markdown</tag>
       </tags>
